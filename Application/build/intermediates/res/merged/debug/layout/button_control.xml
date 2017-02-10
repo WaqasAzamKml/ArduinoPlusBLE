@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="4">
+    <TextView
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:text="@string/no_data"
+    android:gravity="center"
+    android:textSize="35sp"
+    android:layout_weight="2"
+    android:id="@+id/data_value" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:layout_weight="1"
+        android:weightSum="2">
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Button 1"
+            android:id="@+id/btn1"
+            android:layout_weight="1"
+            android:onClick="onClickWrite" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Button 2"
+            android:id="@+id/btn2"
+            android:layout_weight="1"
+            android:onClick="onClickRead" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:layout_weight="1"
+        android:weightSum="2">
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Button 3"
+            android:id="@+id/btn3"
+            android:layout_weight="1"
+            android:onClick="onClickWrite" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Button 4"
+            android:id="@+id/btn4"
+            android:layout_weight="1"
+            android:onClick="onClickRead" />
+    </LinearLayout>
+    <ExpandableListView android:id="@+id/gatt_services_list"
+        android:layout_width="1dp"
+        android:layout_height="1dp"
+        android:visibility="invisible"/>
+</LinearLayout>
