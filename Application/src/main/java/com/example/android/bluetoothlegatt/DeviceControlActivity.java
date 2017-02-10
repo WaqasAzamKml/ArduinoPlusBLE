@@ -1,19 +1,3 @@
-/*
- * Copyright (C) 2013 The Android Open Source Project
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- *
- *      http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
-
 package com.example.android.bluetoothlegatt;
 
 import android.app.Activity;
@@ -30,7 +14,9 @@ import android.os.IBinder;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.MotionEvent;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ExpandableListView;
 import android.widget.SimpleExpandableListAdapter;
 import android.widget.TextView;
@@ -53,6 +39,9 @@ public class DeviceControlActivity extends Activity {
 
     private TextView mConnectionState;
     private TextView mDataField;
+    private Button btn1, btn2, btn3, btn4;
+    private String btn2String = "o"; //send 'b' on second click
+    private String btn4String = "x"; //send 'y' on second click
     private String mDeviceName;
     private String mDeviceAddress;
     private ExpandableListView mGattServicesList;
@@ -172,6 +161,64 @@ public class DeviceControlActivity extends Activity {
 //    mConnectionState = (TextView) findViewById(R.id.connection_state);
 
         mDataField = (TextView) findViewById(R.id.data_value);
+        btn1 = (Button) findViewById(R.id.btn1);
+        btn2 = (Button) findViewById(R.id.btn2);
+        btn3 = (Button) findViewById(R.id.btn3);
+        btn4 = (Button) findViewById(R.id.btn4);
+
+        btn1.setOnTouchListener(new View.OnTouchListener() {
+            @Override
+            public boolean onTouch(View v, MotionEvent event) {
+                if(event.getAction() == MotionEvent.ACTION_DOWN) {
+                    if(mBluetoothLeService != null) {
+                        mBluetoothLeService.writeCustomCharacteristic("s");
+                    }
+                } else if (event.getAction() == MotionEvent.ACTION_UP) {
+                    if(mBluetoothLeService != null) {
+                        mBluetoothLeService.writeCustomCharacteristic("f");
+                    }
+                }
+                return false;
+            }
+        });
+        btn2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(mBluetoothLeService != null) {
+                    if(btn2String.equals("o")){
+                        mBluetoothLeService.writeCustomCharacteristic(btn2String);
+                        btn2String = "b";
+                    }
+                    else if(btn2String.equals("b")){
+                        mBluetoothLeService.writeCustomCharacteristic(btn2String);
+                        btn2String = "o";
+                    }
+                }
+            }
+        });
+        btn3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(mBluetoothLeService != null) {
+                    mBluetoothLeService.writeCustomCharacteristic("b");
+                }
+            }
+        });
+        btn4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(mBluetoothLeService != null) {
+                    if(btn4String.equals("x")){
+                        mBluetoothLeService.writeCustomCharacteristic(btn4String);
+                        btn4String = "y";
+                    }
+                    else if(btn4String.equals("y")){
+                        mBluetoothLeService.writeCustomCharacteristic(btn4String);
+                        btn4String = "x";
+                    }
+                }
+            }
+        });
 
         getActionBar().setTitle(mDeviceName);
         getActionBar().setDisplayHomeAsUpEnabled(true);
@@ -243,7 +290,8 @@ public class DeviceControlActivity extends Activity {
 
     private void displayData(String data) {
         if (data != null) {
-            mDataField.setText(data);
+            String[] s = data.split("\n");
+            mDataField.setText(s[0]);
         }
     }
 

@@ -5,29 +5,29 @@
     density="xhdpi"
     format="8"
     plugin-version="2.2.3"
-    timestamp="1098898162498235"
+    timestamp="1107463267774808"
     token="5051963571884107672"
     verifier="FULL_BUILD_REQUESTED" >
 
     <task
         name="javac"
-        duration="422" />
+        duration="3453" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="23" />
+        duration="306" />
     <task
         name="verifier"
-        duration="4" />
+        duration="25" />
 
     <artifact
         location="F:\Android\DownloadedProjects\BluetoothLeGatt\Application\build\outputs\apk\Application-debug.apk"
         type="MAIN" />
 
     <build
-        timestamp="1098898162498235"
+        timestamp="1107463267774808"
         verifier="FULL_BUILD_REQUESTED" >
         <artifact
             location="F:\Android\DownloadedProjects\BluetoothLeGatt\Application\build\outputs\apk\Application-debug.apk"
