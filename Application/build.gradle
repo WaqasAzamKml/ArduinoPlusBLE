@@ -34,6 +34,7 @@ android {
     buildToolsVersion "23.0.0"
 
     defaultConfig {
+        applicationId "net.itempire.carthing"
         minSdkVersion 18
         targetSdkVersion 23
     }

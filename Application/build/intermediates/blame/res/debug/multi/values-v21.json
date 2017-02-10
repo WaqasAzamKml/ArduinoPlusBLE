@@ -14,12 +14,12 @@
                 "from": {
                     "file": "F:\\Android\\DownloadedProjects\\BluetoothLeGatt\\Application\\src\\main\\res\\values-v21\\base-template-styles.xml",
                     "position": {
-                        "startLine": 20,
+                        "startLine": 4,
                         "startColumn": 4,
-                        "startOffset": 677,
-                        "endLine": 21,
+                        "startOffset": 85,
+                        "endLine": 5,
                         "endColumn": 12,
-                        "endOffset": 753
+                        "endOffset": 161
                     }
                 }
             }

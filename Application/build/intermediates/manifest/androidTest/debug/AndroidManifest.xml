@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.android.bluetoothlegatt.test">
+    package="net.itempire.carthing.test">
 
     <uses-sdk android:minSdkVersion="18" android:targetSdkVersion="23" />
 
@@ -9,8 +9,8 @@
     </application>
 
     <instrumentation android:name="android.test.InstrumentationTestRunner"
-                     android:targetPackage="com.example.android.bluetoothlegatt"
+                     android:targetPackage="net.itempire.carthing"
                      android:handleProfiling="false"
                      android:functionalTest="false"
-                     android:label="Tests for com.example.android.bluetoothlegatt"/>
+                     android:label="Tests for net.itempire.carthing"/>
 </manifest>

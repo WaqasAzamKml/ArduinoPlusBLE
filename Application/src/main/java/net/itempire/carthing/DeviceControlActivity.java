@@ -1,4 +1,4 @@
-package com.example.android.bluetoothlegatt;
+package net.itempire.carthing;
 
 import android.app.Activity;
 import android.bluetooth.BluetoothGattCharacteristic;
@@ -88,11 +88,11 @@ public class DeviceControlActivity extends Activity {
             final String action = intent.getAction();
             if (BluetoothLeService.ACTION_GATT_CONNECTED.equals(action)) {
                 mConnected = true;
-                updateConnectionState(R.string.connected);
+                updateConnectionState(net.itempire.carthing.R.string.connected);
                 invalidateOptionsMenu();
             } else if (BluetoothLeService.ACTION_GATT_DISCONNECTED.equals(action)) {
                 mConnected = false;
-                updateConnectionState(R.string.disconnected);
+                updateConnectionState(net.itempire.carthing.R.string.disconnected);
                 invalidateOptionsMenu();
                 clearUI();
             } else if (BluetoothLeService.ACTION_GATT_SERVICES_DISCOVERED.equals(action)) {
@@ -141,13 +141,13 @@ public class DeviceControlActivity extends Activity {
 
     private void clearUI() {
         mGattServicesList.setAdapter((SimpleExpandableListAdapter) null);
-        mDataField.setText(R.string.no_data);
+        mDataField.setText(net.itempire.carthing.R.string.no_data);
     }
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.button_control);
+        setContentView(net.itempire.carthing.R.layout.button_control);
 
         final Intent intent = getIntent();
         mDeviceName = intent.getStringExtra(EXTRAS_DEVICE_NAME);
@@ -156,15 +156,15 @@ public class DeviceControlActivity extends Activity {
         // Sets up UI references.
 
 //        ((TextView) findViewById(R.id.device_address)).setText(mDeviceAddress);
-        mGattServicesList = (ExpandableListView) findViewById(R.id.gatt_services_list);
+        mGattServicesList = (ExpandableListView) findViewById(net.itempire.carthing.R.id.gatt_services_list);
         mGattServicesList.setOnChildClickListener(servicesListClickListner);
 //    mConnectionState = (TextView) findViewById(R.id.connection_state);
 
-        mDataField = (TextView) findViewById(R.id.data_value);
-        btn1 = (Button) findViewById(R.id.btn1);
-        btn2 = (Button) findViewById(R.id.btn2);
-        btn3 = (Button) findViewById(R.id.btn3);
-        btn4 = (Button) findViewById(R.id.btn4);
+        mDataField = (TextView) findViewById(net.itempire.carthing.R.id.data_value);
+        btn1 = (Button) findViewById(net.itempire.carthing.R.id.btn1);
+        btn2 = (Button) findViewById(net.itempire.carthing.R.id.btn2);
+        btn3 = (Button) findViewById(net.itempire.carthing.R.id.btn3);
+        btn4 = (Button) findViewById(net.itempire.carthing.R.id.btn4);
 
         btn1.setOnTouchListener(new View.OnTouchListener() {
             @Override
@@ -252,13 +252,13 @@ public class DeviceControlActivity extends Activity {
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-        getMenuInflater().inflate(R.menu.gatt_services, menu);
+        getMenuInflater().inflate(net.itempire.carthing.R.menu.gatt_services, menu);
         if (mConnected) {
-            menu.findItem(R.id.menu_connect).setVisible(false);
-            menu.findItem(R.id.menu_disconnect).setVisible(true);
+            menu.findItem(net.itempire.carthing.R.id.menu_connect).setVisible(false);
+            menu.findItem(net.itempire.carthing.R.id.menu_disconnect).setVisible(true);
         } else {
-            menu.findItem(R.id.menu_connect).setVisible(true);
-            menu.findItem(R.id.menu_disconnect).setVisible(false);
+            menu.findItem(net.itempire.carthing.R.id.menu_connect).setVisible(true);
+            menu.findItem(net.itempire.carthing.R.id.menu_disconnect).setVisible(false);
         }
         return true;
     }
@@ -266,10 +266,10 @@ public class DeviceControlActivity extends Activity {
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         switch(item.getItemId()) {
-            case R.id.menu_connect:
+            case net.itempire.carthing.R.id.menu_connect:
                 mBluetoothLeService.connect(mDeviceAddress);
                 return true;
-            case R.id.menu_disconnect:
+            case net.itempire.carthing.R.id.menu_disconnect:
                 mBluetoothLeService.disconnect();
                 return true;
             case android.R.id.home:
@@ -301,8 +301,8 @@ public class DeviceControlActivity extends Activity {
     private void displayGattServices(List<BluetoothGattService> gattServices) {
         if (gattServices == null) return;
         String uuid = null;
-        String unknownServiceString = getResources().getString(R.string.unknown_service);
-        String unknownCharaString = getResources().getString(R.string.unknown_characteristic);
+        String unknownServiceString = getResources().getString(net.itempire.carthing.R.string.unknown_service);
+        String unknownCharaString = getResources().getString(net.itempire.carthing.R.string.unknown_characteristic);
         ArrayList<HashMap<String, String>> gattServiceData = new ArrayList<HashMap<String, String>>();
         ArrayList<ArrayList<HashMap<String, String>>> gattCharacteristicData
                 = new ArrayList<ArrayList<HashMap<String, String>>>();

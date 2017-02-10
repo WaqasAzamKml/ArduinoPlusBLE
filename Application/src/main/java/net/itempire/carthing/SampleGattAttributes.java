@@ -1,4 +1,4 @@
-package com.example.android.bluetoothlegatt;
+package net.itempire.carthing;
 
 import java.util.HashMap;
 

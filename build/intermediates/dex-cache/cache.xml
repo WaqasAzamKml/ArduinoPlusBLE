@@ -25,7 +25,7 @@
         jumboMode="true"
         optimize="true"
         revision="23.0.0"
-        sha1="47db533c5bc6688ac67388dd7db51ad5618ac76c">
+        sha1="327bf42a62202cfc82b34a3f7ba6e95b2c54d981">
         <dex dex="F:\Android\DownloadedProjects\BluetoothLeGatt\Application\build\intermediates\pre-dexed\debug\instant-run-bootstrap_449736778a166070a90f83875cecde39cfd6c722.jar" />
     </item>
     <item
@@ -34,7 +34,7 @@
         jumboMode="true"
         optimize="true"
         revision="23.0.0"
-        sha1="5b0db9b99cb78a4cc76e963d612f6d740d2cfaf6">
+        sha1="23355ac47a9f8a7b5e87ba946aab2b61b61a9716">
         <dex dex="F:\Android\DownloadedProjects\BluetoothLeGatt\Application\build\intermediates\pre-dexed\debug\instant-run_2b5569bdacbb92bd17807fdd444384a3b6cf9d0b.jar" />
     </item>
     <item

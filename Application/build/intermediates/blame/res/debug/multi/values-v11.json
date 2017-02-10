@@ -13,11 +13,11 @@
                 "from": {
                     "file": "F:\\Android\\DownloadedProjects\\BluetoothLeGatt\\Application\\src\\main\\res\\values-v11\\template-styles.xml",
                     "position": {
-                        "startLine": 19,
+                        "startLine": 3,
                         "startColumn": 4,
-                        "startOffset": 650,
+                        "startOffset": 46,
                         "endColumn": 65,
-                        "endOffset": 711
+                        "endOffset": 107
                     }
                 }
             }
