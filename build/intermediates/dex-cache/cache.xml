@@ -3,39 +3,30 @@
 
     <item
         is-multidex="false"
-        jar="F:\Android\DownloadedProjects\BluetoothLeGatt\Application\build\intermediates\exploded-aar\com.android.support\support-v13\23.0.0\jars\libs\internal_impl-23.0.0.jar"
+        jar="F:\Android\Apps\CarThing\Application\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
         jumboMode="true"
         optimize="true"
         revision="23.0.0"
-        sha1="5d4bccb885c8a89d066ecb6c4addb553a99a79a2">
-        <dex dex="F:\Android\DownloadedProjects\BluetoothLeGatt\Application\build\intermediates\pre-dexed\debug\internal_impl-23.0.0_b0616762a5b46b21d14eb170b6ba55451ffb9a60.jar" />
+        sha1="45cf68db5891dd355e895f03df15d9b61b11ba8c">
+        <dex dex="F:\Android\Apps\CarThing\Application\build\intermediates\pre-dexed\debug\instant-run_dfbf771ade2b0ebdc2e72c7af502eaeb1a06d264.jar" />
     </item>
     <item
         is-multidex="false"
-        jar="F:\Android\DownloadedProjects\BluetoothLeGatt\Application\build\intermediates\exploded-aar\com.android.support\support-v13\23.0.0\jars\classes.jar"
+        jar="F:\Android\Apps\CarThing\Application\build\intermediates\exploded-aar\com.android.support\support-v13\23.0.0\jars\classes.jar"
         jumboMode="true"
         optimize="true"
         revision="23.0.0"
         sha1="bb0ac3f3ee2d71854501cc28e52cc84a20209b41">
-        <dex dex="F:\Android\DownloadedProjects\BluetoothLeGatt\Application\build\intermediates\pre-dexed\debug\com.android.support-support-v13-23.0.0_6f8e0c9fc535eb1ec8ed152f3a53f4edde83c6f6.jar" />
+        <dex dex="F:\Android\Apps\CarThing\Application\build\intermediates\pre-dexed\debug\com.android.support-support-v13-23.0.0_37157e9672c62133d6d1d6e196ec42e79fb5f673.jar" />
     </item>
     <item
         is-multidex="false"
-        jar="F:\Android\DownloadedProjects\BluetoothLeGatt\Application\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jar="F:\Android\Apps\CarThing\Application\build\intermediates\exploded-aar\com.android.support\support-v13\23.0.0\jars\libs\internal_impl-23.0.0.jar"
         jumboMode="true"
         optimize="true"
         revision="23.0.0"
-        sha1="327bf42a62202cfc82b34a3f7ba6e95b2c54d981">
-        <dex dex="F:\Android\DownloadedProjects\BluetoothLeGatt\Application\build\intermediates\pre-dexed\debug\instant-run-bootstrap_449736778a166070a90f83875cecde39cfd6c722.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="F:\Android\DownloadedProjects\BluetoothLeGatt\Application\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.0"
-        sha1="23355ac47a9f8a7b5e87ba946aab2b61b61a9716">
-        <dex dex="F:\Android\DownloadedProjects\BluetoothLeGatt\Application\build\intermediates\pre-dexed\debug\instant-run_2b5569bdacbb92bd17807fdd444384a3b6cf9d0b.jar" />
+        sha1="5d4bccb885c8a89d066ecb6c4addb553a99a79a2">
+        <dex dex="F:\Android\Apps\CarThing\Application\build\intermediates\pre-dexed\debug\internal_impl-23.0.0_1c0816bf9936e271a3b4321a4e0f61a37735de0c.jar" />
     </item>
     <item
         is-multidex="false"
@@ -44,34 +35,43 @@
         optimize="true"
         revision="23.0.0"
         sha1="990e7f98a7bad86a40b1f0bcfeb039023afd0839">
-        <dex dex="F:\Android\DownloadedProjects\BluetoothLeGatt\Application\build\intermediates\pre-dexed\debug\support-annotations-23.0.0_f7a7f6732f30113caeabef979ddd4831545faa13.jar" />
+        <dex dex="F:\Android\Apps\CarThing\Application\build\intermediates\pre-dexed\debug\support-annotations-23.0.0_f7a7f6732f30113caeabef979ddd4831545faa13.jar" />
     </item>
     <item
         is-multidex="false"
-        jar="F:\Android\DownloadedProjects\BluetoothLeGatt\Application\build\intermediates\exploded-aar\com.android.support\support-v4\23.0.0\jars\libs\internal_impl-23.0.0.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.0"
-        sha1="8bd336eeae661e8311330284897ee07f8ebaa297">
-        <dex dex="F:\Android\DownloadedProjects\BluetoothLeGatt\Application\build\intermediates\pre-dexed\debug\internal_impl-23.0.0_0ca54af49d896ef0f37545cc89a8bf8febeee017.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="F:\Android\DownloadedProjects\BluetoothLeGatt\Application\build\intermediates\exploded-aar\com.android.support\cardview-v7\23.0.0\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.0"
-        sha1="1ccbc26be2c465c622a48310e8092241b01abe80">
-        <dex dex="F:\Android\DownloadedProjects\BluetoothLeGatt\Application\build\intermediates\pre-dexed\debug\com.android.support-cardview-v7-23.0.0_2becff3d43663194c7b221fcc544b67c0be798bf.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="F:\Android\DownloadedProjects\BluetoothLeGatt\Application\build\intermediates\exploded-aar\com.android.support\support-v4\23.0.0\jars\classes.jar"
+        jar="F:\Android\Apps\CarThing\Application\build\intermediates\exploded-aar\com.android.support\support-v4\23.0.0\jars\classes.jar"
         jumboMode="true"
         optimize="true"
         revision="23.0.0"
         sha1="8413c27b45b7fe61dca4a98159f65e2cee215f5a">
-        <dex dex="F:\Android\DownloadedProjects\BluetoothLeGatt\Application\build\intermediates\pre-dexed\debug\com.android.support-support-v4-23.0.0_ba23cdfe56ad545e1164e1ad3414884938e3dd4c.jar" />
+        <dex dex="F:\Android\Apps\CarThing\Application\build\intermediates\pre-dexed\debug\com.android.support-support-v4-23.0.0_085c860f5cfb64beda66f6ae76db953d8cf16303.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="F:\Android\Apps\CarThing\Application\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.0"
+        sha1="de40e161b8d379220da64a13a0dbfe9791994b18">
+        <dex dex="F:\Android\Apps\CarThing\Application\build\intermediates\pre-dexed\debug\instant-run-bootstrap_d932c5bad54f77584ad997efd921708ace8fb705.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="F:\Android\Apps\CarThing\Application\build\intermediates\exploded-aar\com.android.support\support-v4\23.0.0\jars\libs\internal_impl-23.0.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.0"
+        sha1="8bd336eeae661e8311330284897ee07f8ebaa297">
+        <dex dex="F:\Android\Apps\CarThing\Application\build\intermediates\pre-dexed\debug\internal_impl-23.0.0_c52298445633862838ba912f41a88f93000942d0.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="F:\Android\Apps\CarThing\Application\build\intermediates\exploded-aar\com.android.support\cardview-v7\23.0.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.0"
+        sha1="1ccbc26be2c465c622a48310e8092241b01abe80">
+        <dex dex="F:\Android\Apps\CarThing\Application\build\intermediates\pre-dexed\debug\com.android.support-cardview-v7-23.0.0_a776fa7dc3f659bcbc343df10a5ea70737520c46.jar" />
     </item>
 
 </items>

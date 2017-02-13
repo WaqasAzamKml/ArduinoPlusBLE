@@ -23,9 +23,10 @@ int dimen margin_medium 0x7f040007
 int dimen margin_small 0x7f040008
 int dimen margin_tiny 0x7f040009
 int dimen vertical_page_margin 0x7f040001
-int drawable custom_progress 0x7f020000
-int drawable ic_launcher 0x7f020001
-int drawable tile 0x7f020002
+int drawable carthing 0x7f020000
+int drawable custom_progress 0x7f020001
+int drawable ic_launcher 0x7f020002
+int drawable tile 0x7f020003
 int id btnAC 0x7f090005
 int id btnDoor 0x7f090004
 int id btnEngine 0x7f090002
