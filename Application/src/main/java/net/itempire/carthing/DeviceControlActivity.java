@@ -14,7 +14,6 @@ import android.os.IBinder;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.MotionEvent;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ExpandableListView;
@@ -39,9 +38,8 @@ public class DeviceControlActivity extends Activity {
 
     private TextView mConnectionState;
     private TextView mDataField;
-    private Button btn1, btn2, btn3, btn4;
-    private String btn2String = "o"; //send 'b' on second click
-    private String btn4String = "x"; //send 'y' on second click
+    private Button btnStart, btnEngine, btnStopNBlock, btnDoor, btnAC, btnTemperature, btnGate;
+    private String btnACString = "x";
     private String mDeviceName;
     private String mDeviceAddress;
     private ExpandableListView mGattServicesList;
@@ -161,61 +159,90 @@ public class DeviceControlActivity extends Activity {
 //    mConnectionState = (TextView) findViewById(R.id.connection_state);
 
         mDataField = (TextView) findViewById(net.itempire.carthing.R.id.data_value);
-        btn1 = (Button) findViewById(net.itempire.carthing.R.id.btn1);
-        btn2 = (Button) findViewById(net.itempire.carthing.R.id.btn2);
-        btn3 = (Button) findViewById(net.itempire.carthing.R.id.btn3);
-        btn4 = (Button) findViewById(net.itempire.carthing.R.id.btn4);
+        btnStart = (Button) findViewById(R.id.btnStart);
+        btnEngine = (Button) findViewById(R.id.btnEngine);
+        btnStopNBlock = (Button) findViewById(R.id.btnStopNBlock);
+        btnDoor = (Button) findViewById(R.id.btnDoor);
+        btnAC = (Button) findViewById(R.id.btnAC);
+        btnTemperature = (Button) findViewById(R.id.btnTemperature);
+        btnGate = (Button) findViewById(R.id.btnGate);
 
-        btn1.setOnTouchListener(new View.OnTouchListener() {
-            @Override
-            public boolean onTouch(View v, MotionEvent event) {
-                if(event.getAction() == MotionEvent.ACTION_DOWN) {
-                    if(mBluetoothLeService != null) {
-                        mBluetoothLeService.writeCustomCharacteristic("s");
-                    }
-                } else if (event.getAction() == MotionEvent.ACTION_UP) {
-                    if(mBluetoothLeService != null) {
-                        mBluetoothLeService.writeCustomCharacteristic("f");
-                    }
-                }
-                return false;
-            }
-        });
-        btn2.setOnClickListener(new View.OnClickListener() {
+        //Send "s" on button press, and Send "f" on button release
+//        btn1.setOnTouchListener(new View.OnTouchListener() {
+//            @Override
+//            public boolean onTouch(View v, MotionEvent event) {
+//                if(event.getAction() == MotionEvent.ACTION_DOWN) {
+//                    if(mBluetoothLeService != null) {
+//                        mBluetoothLeService.writeCustomCharacteristic("s");
+//                    }
+//                } else if (event.getAction() == MotionEvent.ACTION_UP) {
+//                    if(mBluetoothLeService != null) {
+//                        mBluetoothLeService.writeCustomCharacteristic("f");
+//                    }
+//                }
+//                return false;
+//            }
+//        });
+
+        btnStart.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(mBluetoothLeService != null) {
-                    if(btn2String.equals("o")){
-                        mBluetoothLeService.writeCustomCharacteristic(btn2String);
-                        btn2String = "b";
-                    }
-                    else if(btn2String.equals("b")){
-                        mBluetoothLeService.writeCustomCharacteristic(btn2String);
-                        btn2String = "o";
-                    }
+                if(mBluetoothLeService != null){
+                    mBluetoothLeService.writeCustomCharacteristic("s");
                 }
             }
         });
-        btn3.setOnClickListener(new View.OnClickListener() {
+        btnEngine.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(mBluetoothLeService != null) {
+                if(mBluetoothLeService != null){
+                    mBluetoothLeService.writeCustomCharacteristic("o");
+                }
+            }
+        });
+        btnStopNBlock.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(mBluetoothLeService != null){
                     mBluetoothLeService.writeCustomCharacteristic("b");
                 }
             }
         });
-        btn4.setOnClickListener(new View.OnClickListener() {
+        btnDoor.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(mBluetoothLeService != null) {
-                    if(btn4String.equals("x")){
-                        mBluetoothLeService.writeCustomCharacteristic(btn4String);
-                        btn4String = "y";
+                if(mBluetoothLeService != null){
+                    mBluetoothLeService.writeCustomCharacteristic("d");
+                }
+            }
+        });
+        btnAC.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(mBluetoothLeService != null){
+                    if(btnACString.equals("x")){
+                        mBluetoothLeService.writeCustomCharacteristic("x");
+                        btnACString = "y";
+                    } else{
+                        mBluetoothLeService.writeCustomCharacteristic("y");
+                        btnACString = "x";
                     }
-                    else if(btn4String.equals("y")){
-                        mBluetoothLeService.writeCustomCharacteristic(btn4String);
-                        btn4String = "x";
-                    }
+                }
+            }
+        });
+        btnTemperature.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(mBluetoothLeService != null){
+                    mBluetoothLeService.writeCustomCharacteristic("t");
+                }
+            }
+        });
+        btnGate.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(mBluetoothLeService != null){
+                    mBluetoothLeService.writeCustomCharacteristic("g");
                 }
             }
         });

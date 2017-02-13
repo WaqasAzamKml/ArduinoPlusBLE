@@ -4,14 +4,14 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="5dp"
-    android:weightSum="4">
+    android:weightSum="8">
     <TextView
     android:layout_width="match_parent"
     android:layout_height="0dp"
     android:text="@string/no_data"
     android:gravity="center"
     android:textSize="35sp"
-    android:layout_weight="2"
+    android:layout_weight="3"
     android:id="@+id/data_value" />
     <LinearLayout
         android:layout_width="match_parent"
@@ -23,15 +23,40 @@
         <Button
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:text="Button 1"
-            android:id="@+id/btn1"
+            android:text="Start"
+            android:id="@+id/btnStart"
             android:layout_weight="1"/>
 
         <Button
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:text="Button 2"
-            android:id="@+id/btn2"
+            android:text="Engine"
+            android:id="@+id/btnEngine"
+            android:layout_weight="1"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:layout_weight="3"
+        android:weightSum="3">
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:text="Stop n Block Engine"
+            android:id="@+id/btnStopNBlock"
+            android:layout_weight="1"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:text="Door Lock/Unlock"
+            android:id="@+id/btnDoor"
+            android:layout_weight="1"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:text="AC ON/OFF"
+            android:id="@+id/btnAC"
             android:layout_weight="1"/>
     </LinearLayout>
     <LinearLayout
@@ -44,18 +69,16 @@
         <Button
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:text="Button 3"
-            android:id="@+id/btn3"
-            android:layout_weight="1"
-            android:onClick="onClickWrite" />
+            android:text="Temperature"
+            android:id="@+id/btnTemperature"
+            android:layout_weight="1"/>
 
         <Button
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:text="Button 4"
-            android:id="@+id/btn4"
-            android:layout_weight="1"
-            android:onClick="onClickRead" />
+            android:text="Gate"
+            android:id="@+id/btnGate"
+            android:layout_weight="1"/>
     </LinearLayout>
     <ExpandableListView android:id="@+id/gatt_services_list"
         android:layout_width="1dp"
