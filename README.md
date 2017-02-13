@@ -1,9 +1,10 @@
 
-Android BluetoothLeGatt Sample
+Android + Arduino Communication (Using Bluetooth)
 ===================================
 
-This sample demonstrates how to use the Bluetooth LE Generic Attribute Profile (GATT)
-to transmit arbitrary data between devices.
+Took help from a GitHub repo [(BluetoothLeGatt by Google)][3], an article [(pluscode from AllAboutCircuits.com)][4] and an [Android Application][5] at Google Play Store.
+
+Rest of the Readme.md file is unchanged (Original form in which it was downloaded).
 
 Introduction
 ------------
@@ -19,6 +20,9 @@ The Activities communicate with the Service, which in turn interacts with the [B
 
 [1]:http://developer.android.com/reference/android/app/Service.html
 [2]:https://developer.android.com/reference/android/bluetooth/BluetoothGatt.html
+[3]:https://github.com/googlesamples/android-BluetoothLeGatt
+[4]:http://www.allaboutcircuits.com/projects/how-to-communicate-with-a-custom-ble-using-an-android-app/
+[5]:https://play.google.com/store/apps/details?id=com.alltek.android.bluetoothlegatt
 
 Pre-requisites
 --------------
