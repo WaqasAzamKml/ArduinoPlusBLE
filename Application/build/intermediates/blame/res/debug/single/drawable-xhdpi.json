@@ -2,9 +2,5 @@
     {
         "merged": "F:\\Android\\Apps\\CarThing\\Application\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\ic_launcher.png",
         "source": "F:\\Android\\Apps\\CarThing\\Application\\src\\main\\res\\drawable-xhdpi\\ic_launcher.png"
-    },
-    {
-        "merged": "F:\\Android\\DownloadedProjects\\BluetoothLeGatt\\Application\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\ic_launcher.png",
-        "source": "F:\\Android\\DownloadedProjects\\BluetoothLeGatt\\Application\\src\\main\\res\\drawable-xhdpi\\ic_launcher.png"
     }
 ]

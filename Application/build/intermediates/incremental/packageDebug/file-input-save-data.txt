@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Mon Feb 13 16:10:24 PKT 2017
+#Mon Feb 13 16:22:28 PKT 2017
 8.set=ANDROID_RESOURCE
 1.base=F\:\\Android\\Apps\\CarThing\\Application\\build\\intermediates\\res\\resources-debug.ap_
 1.file=F\:\\Android\\Apps\\CarThing\\Application\\build\\intermediates\\res\\resources-debug.ap_\\res\\menu\\gatt_services.xml

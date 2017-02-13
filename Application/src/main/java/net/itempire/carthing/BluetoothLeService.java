@@ -324,14 +324,30 @@ public class BluetoothLeService extends Service {
             Log.w(TAG, "BluetoothAdapter not initialized");
             return;
         }
-        /*check if the service is available on the device*/
-        BluetoothGattService mCustomService = mBluetoothGatt.getService(UUID.fromString("0000ffe0-0000-1000-8000-00805f9b34fb"));
+        /*check if the service is available on the device
+        * Get last item from the list of services because
+        * custom services are on the end of services list */
+        int lastService, lastCharacteristic;
+        lastService = mBluetoothGatt.getServices().size() - 1;
+        List<BluetoothGattService> myServices = mBluetoothGatt.getServices();
+        BluetoothGattService mCustomService = myServices.get(lastService);
+
+        // No need to manually enter UUID of service or get the service from UUID
+        // because required service is automatically fetched from code above.
+        //BluetoothGattService mCustomService = mBluetoothGatt.getService(UUID.fromString("0000ffe0-0000-1000-8000-00805f9b34fb"));
         if(mCustomService == null){
             Log.w(TAG, "Custom BLE Service not found");
             return;
         }
-        /*get the read characteristic from the service*/
-        BluetoothGattCharacteristic mWriteCharacteristic = mCustomService.getCharacteristic(UUID.fromString("0000ffe1-0000-1000-8000-00805f9b34fb"));
+        /*get the read characteristic from the service
+        * Get last item from the list of characteristics because
+        * custom read/n/write characteristics are on the end of custom characteristics list */
+        lastCharacteristic = mCustomService.getCharacteristics().size() -1;
+        List<BluetoothGattCharacteristic> myCharacteristics = mCustomService.getCharacteristics();
+        BluetoothGattCharacteristic mWriteCharacteristic = myCharacteristics.get(lastCharacteristic);
+        // No need to manually enter UUID of characteristic or get the characteristic from UUID
+        // because required characteristic is automatically fetched from code above.
+        //BluetoothGattCharacteristic mWriteCharacteristic = mCustomService.getCharacteristic(UUID.fromString("0000ffe1-0000-1000-8000-00805f9b34fb"));
         mWriteCharacteristic.setValue(value);
         if(mBluetoothGatt.writeCharacteristic(mWriteCharacteristic) == false){
             Log.w(TAG, "Failed to write characteristic");

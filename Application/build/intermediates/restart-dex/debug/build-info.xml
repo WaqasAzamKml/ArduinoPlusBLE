@@ -5,33 +5,33 @@
     density="xhdpi"
     format="8"
     plugin-version="2.2.3"
-    timestamp="133002543847847"
-    token="5051963571884107672"
+    timestamp="133704851995552"
+    token="5279366123450252935"
     verifier="FULL_BUILD_REQUESTED" >
 
     <task
         name="javac"
-        duration="551" />
+        duration="478" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="27" />
+        duration="358" />
     <task
         name="verifier"
-        duration="3" />
+        duration="158" />
 
     <artifact
         location="F:\Android\Apps\CarThing\Application\build\outputs\apk\Application-debug.apk"
         type="MAIN" />
 
     <build
-        timestamp="1118153003171331"
-        verifier="COMPATIBLE" >
+        timestamp="133704851995552"
+        verifier="FULL_BUILD_REQUESTED" >
         <artifact
-            location="F:\Android\DownloadedProjects\BluetoothLeGatt\Application\build\intermediates\instant-run-resources\resources-debug.ir.ap_"
-            type="RESOURCES" />
+            location="F:\Android\Apps\CarThing\Application\build\outputs\apk\Application-debug.apk"
+            type="MAIN" />
     </build>
 
 </instant-run>

@@ -7,7 +7,7 @@
         jumboMode="true"
         optimize="true"
         revision="23.0.0"
-        sha1="45cf68db5891dd355e895f03df15d9b61b11ba8c">
+        sha1="ae028916c919ba7250b45b56263c7cef88bee9aa">
         <dex dex="F:\Android\Apps\CarThing\Application\build\intermediates\pre-dexed\debug\instant-run_dfbf771ade2b0ebdc2e72c7af502eaeb1a06d264.jar" />
     </item>
     <item
@@ -52,7 +52,7 @@
         jumboMode="true"
         optimize="true"
         revision="23.0.0"
-        sha1="de40e161b8d379220da64a13a0dbfe9791994b18">
+        sha1="4945a4543d2be1fe9d44bca39eb8e50bb3e56098">
         <dex dex="F:\Android\Apps\CarThing\Application\build\intermediates\pre-dexed\debug\instant-run-bootstrap_d932c5bad54f77584ad997efd921708ace8fb705.jar" />
     </item>
     <item
