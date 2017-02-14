@@ -5,6 +5,8 @@
     <color name="cardview_shadow_end_color">#03000000</color>
     <color name="cardview_shadow_start_color">#37000000</color>
     <declare-styleable name="CardView"><attr format="color" name="cardBackgroundColor"/><attr format="dimension" name="cardCornerRadius"/><attr format="dimension" name="cardElevation"/><attr format="dimension" name="cardMaxElevation"/><attr format="boolean" name="cardUseCompatPadding"/><attr format="boolean" name="cardPreventCornerOverlap"/><attr format="dimension" name="contentPadding"/><attr format="dimension" name="contentPaddingLeft"/><attr format="dimension" name="contentPaddingRight"/><attr format="dimension" name="contentPaddingTop"/><attr format="dimension" name="contentPaddingBottom"/></declare-styleable>
+    <declare-styleable name="Iconics"><attr format="string" name="ico_icon"/><attr format="color|reference" name="ico_color"/><attr format="dimension|reference" name="ico_size"/><attr format="dimension|reference" name="ico_offset_x"/><attr format="dimension|reference" name="ico_offset_y"/><attr format="dimension|reference" name="ico_padding"/><attr format="color|reference" name="ico_contour_color"/><attr format="dimension|reference" name="ico_contour_width"/><attr format="color|reference" name="ico_background_color"/><attr format="dimension|reference" name="ico_corner_radius"/></declare-styleable>
+    <declare-styleable name="IconicsImageView"><attr format="string" name="iiv_icon"/><attr format="color|reference" name="iiv_color"/><attr format="dimension|reference" name="iiv_size"/><attr format="dimension|reference" name="iiv_padding"/><attr format="color|reference" name="iiv_contour_color"/><attr format="dimension|reference" name="iiv_contour_width"/><attr format="color|reference" name="iiv_background_color"/><attr format="dimension|reference" name="iiv_corner_radius"/></declare-styleable>
     <dimen name="cardview_compat_inset_shadow">1dp</dimen>
     <dimen name="cardview_default_elevation">2dp</dimen>
     <dimen name="cardview_default_radius">2dp</dimen>
@@ -15,14 +17,55 @@
     <dimen name="margin_small">8dp</dimen>
     <dimen name="margin_tiny">4dp</dimen>
     <dimen name="vertical_page_margin">@dimen/margin_medium</dimen>
+    <item name="iconics_tag_id" type="id"/>
     <string name="app_name">CarThing</string>
     <string name="ble_not_supported">BLE is not supported</string>
     <string name="connected">Connected</string>
+    <string name="define_AndroidIconics">year;owner</string>
+    <string name="define_MaterialDesignIcons">year;author;libraryName;libraryWebsite</string>
+    <string name="define_font_community_material">com.mikepenz.community_material_typeface_library.CommunityMaterial</string>
+    <string name="define_font_weather_icons">com.mikepenz.weather_icons_typeface_library.WeatherIcons</string>
+    <string name="define_int_Weather_Icons">year;author;libraryName;libraryWebsite</string>
     <string name="disconnected">Disconnected</string>
     <string name="error_bluetooth_not_supported">Bluetooth not supported.</string>
     <string name="label_data">Data:</string>
     <string name="label_device_address">Device address:</string>
     <string name="label_state">State:</string>
+    <string name="library_AndroidIconics_author">Mike Penz</string>
+    <string name="library_AndroidIconics_authorWebsite">http://mikepenz.com/</string>
+    <string name="library_AndroidIconics_isOpenSource">true</string>
+    <string name="library_AndroidIconics_libraryDescription">
+        
+        This library allows you to include vector icons everywhere in your project. No limits are given. Scale with no limit, use any Color at any time, provide a contour, and many additional customizations
+        
+    </string>
+    <string name="library_AndroidIconics_libraryName">Android-Iconics</string>
+    <string name="library_AndroidIconics_libraryVersion">2.8.2</string>
+    <string name="library_AndroidIconics_libraryWebsite">https://github.com/mikepenz/Android-Iconics</string>
+    <string name="library_AndroidIconics_licenseId">apache_2_0</string>
+    <string name="library_AndroidIconics_owner">Mike Penz</string>
+    <string name="library_AndroidIconics_repositoryLink">https://github.com/mikepenz/Android-Iconics</string>
+    <string name="library_AndroidIconics_year">2016</string>
+    <string name="library_MaterialDesignIcons_author">Austin Andrews</string>
+    <string name="library_MaterialDesignIcons_authorWebsite">https://materialdesignicons.com/</string>
+    <string name="library_MaterialDesignIcons_isOpenSource">true</string>
+    <string name="library_MaterialDesignIcons_libraryDescription">Material Design Icons\' growing icon collection allows designers and developers targeting various platforms to download icons in the format, color and size they need for any project.</string>
+    <string name="library_MaterialDesignIcons_libraryName">Material Design Icons</string>
+    <string name="library_MaterialDesignIcons_libraryVersion">1.7.22.1</string>
+    <string name="library_MaterialDesignIcons_libraryWebsite">https://materialdesignicons.com/</string>
+    <string name="library_MaterialDesignIcons_licenseId">sil_ofl_1_1</string>
+    <string name="library_MaterialDesignIcons_repositoryLink">https://github.com/templarian/MaterialDesign/</string>
+    <string name="library_MaterialDesignIcons_year">2016</string>
+    <string name="library_Weather_Icons_author">Lukas Bischoff and Erik Flowers</string>
+    <string name="library_Weather_Icons_authorWebsite"/>
+    <string name="library_Weather_Icons_isOpenSource">true</string>
+    <string name="library_Weather_Icons_libraryDescription">Weather Icons is the only icon font and CSS with 222 weather themed icons, ready to be dropped right into Bootstrap, or any project that needs high quality weather, maritime, and meteorological based icons!</string>
+    <string name="library_Weather_Icons_libraryName">Weather Icons</string>
+    <string name="library_Weather_Icons_libraryVersion">2.0.10.2</string>
+    <string name="library_Weather_Icons_libraryWebsite">https://erikflowers.github.io/weather-icons/</string>
+    <string name="library_Weather_Icons_licenseId">sil_ofl_1_1</string>
+    <string name="library_Weather_Icons_repositoryLink">https://github.com/erikflowers/weather-icons</string>
+    <string name="library_Weather_Icons_year"> </string>
     <string name="menu_connect">Connect</string>
     <string name="menu_disconnect">Disconnect</string>
     <string name="menu_scan">Scan</string>
