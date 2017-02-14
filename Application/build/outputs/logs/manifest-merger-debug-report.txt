@@ -34,8 +34,6 @@ ADDED from F:\Android\Apps\CarThing\Application\src\main\AndroidManifest.xml:18:
 MERGED from [com.android.support:support-v13:23.0.0] F:\Android\Apps\CarThing\Application\build\intermediates\exploded-aar\com.android.support\support-v13\23.0.0\AndroidManifest.xml:22:5-20
 MERGED from [com.android.support:support-v4:23.0.0] F:\Android\Apps\CarThing\Application\build\intermediates\exploded-aar\com.android.support\support-v4\23.0.0\AndroidManifest.xml:22:5-20
 MERGED from [com.android.support:cardview-v7:23.0.0] F:\Android\Apps\CarThing\Application\build\intermediates\exploded-aar\com.android.support\cardview-v7\23.0.0\AndroidManifest.xml:22:5-20
-MERGED from [com.mikepenz:community-material-typeface:1.7.22.1] F:\Android\Apps\CarThing\Application\build\intermediates\exploded-aar\com.mikepenz\community-material-typeface\1.7.22.1\AndroidManifest.xml:28:5-20
-MERGED from [com.mikepenz:weather-icons-typeface:2.0.10.2] F:\Android\Apps\CarThing\Application\build\intermediates\exploded-aar\com.mikepenz\weather-icons-typeface\2.0.10.2\AndroidManifest.xml:27:5-20
 	android:label
 		ADDED from F:\Android\Apps\CarThing\Application\src\main\AndroidManifest.xml:18:18-50
 	android:icon
@@ -73,9 +71,6 @@ INJECTED from F:\Android\Apps\CarThing\Application\src\main\AndroidManifest.xml 
 MERGED from [com.android.support:support-v13:23.0.0] F:\Android\Apps\CarThing\Application\build\intermediates\exploded-aar\com.android.support\support-v13\23.0.0\AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:support-v4:23.0.0] F:\Android\Apps\CarThing\Application\build\intermediates\exploded-aar\com.android.support\support-v4\23.0.0\AndroidManifest.xml:20:5-43
 MERGED from [com.android.support:cardview-v7:23.0.0] F:\Android\Apps\CarThing\Application\build\intermediates\exploded-aar\com.android.support\cardview-v7\23.0.0\AndroidManifest.xml:20:5-43
-MERGED from [com.mikepenz:iconics-core:2.8.2] F:\Android\Apps\CarThing\Application\build\intermediates\exploded-aar\com.mikepenz\iconics-core\2.8.2\AndroidManifest.xml:8:5-10:41
-MERGED from [com.mikepenz:community-material-typeface:1.7.22.1] F:\Android\Apps\CarThing\Application\build\intermediates\exploded-aar\com.mikepenz\community-material-typeface\1.7.22.1\AndroidManifest.xml:24:5-26:41
-MERGED from [com.mikepenz:weather-icons-typeface:2.0.10.2] F:\Android\Apps\CarThing\Application\build\intermediates\exploded-aar\com.mikepenz\weather-icons-typeface\2.0.10.2\AndroidManifest.xml:23:5-25:41
 	android:targetSdkVersion
 		INJECTED from F:\Android\Apps\CarThing\Application\src\main\AndroidManifest.xml
 		INJECTED from F:\Android\Apps\CarThing\Application\src\main\AndroidManifest.xml
