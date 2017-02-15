@@ -31,7 +31,7 @@
                 <Button
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
-                    android:drawableTop="@drawable/ic_power_white"
+                    android:drawableTop="@drawable/ic_power"
                     android:text="Start"
                     android:textColor="#fff"
                     android:background="#E47C01"
@@ -69,8 +69,8 @@
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
-                android:drawableStart="@drawable/ic_lock_white"
-                android:text="Door Lock / Unlock"
+                android:drawableStart="@drawable/ic_lock"
+                android:text="Door Lock/Unlock"
                 android:textColor="#fff"
                 android:background="#C0392B"
                 android:paddingTop="5sp"

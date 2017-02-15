@@ -5,7 +5,7 @@
     density="xhdpi"
     format="8"
     plugin-version="2.2.3"
-    timestamp="299875514193162"
+    timestamp="302697615992217"
     token="5279366123450252935"
     verifier="COMPATIBLE" >
 
@@ -27,14 +27,14 @@
         type="RESOURCES" />
 
     <build
-        timestamp="299600859416280"
+        timestamp="302649374158096"
         verifier="FULL_BUILD_REQUESTED" >
         <artifact
             location="F:\Android\Apps\CarThing\Application\build\outputs\apk\Application-debug.apk"
             type="MAIN" />
     </build>
     <build
-        timestamp="299875514193162"
+        timestamp="302697615992217"
         verifier="COMPATIBLE" >
         <artifact
             location="F:\Android\Apps\CarThing\Application\build\intermediates\instant-run-resources\resources-debug.ir.ap_"
