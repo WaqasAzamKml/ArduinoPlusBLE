@@ -123,6 +123,15 @@
                     android:id="@+id/btnGate"
                     android:layout_weight="1"/>
             </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/tvAbout"
+                android:text="About CarThing"
+                android:textSize="24sp"
+                android:gravity="center"
+                android:padding="50sp"
+                android:clickable="true"/>
         </LinearLayout>
     </ScrollView>
     <ExpandableListView android:id="@+id/gatt_services_list"

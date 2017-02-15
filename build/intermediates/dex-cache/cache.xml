@@ -7,44 +7,71 @@
         jumboMode="true"
         optimize="true"
         revision="23.0.0"
-        sha1="ae028916c919ba7250b45b56263c7cef88bee9aa">
+        sha1="57b28c15e0b89dc1c0ffd4762677c37839fafd04">
         <dex dex="F:\Android\Apps\CarThing\Application\build\intermediates\pre-dexed\debug\instant-run_dfbf771ade2b0ebdc2e72c7af502eaeb1a06d264.jar" />
     </item>
     <item
         is-multidex="false"
-        jar="F:\Android\Apps\CarThing\Application\build\intermediates\exploded-aar\com.android.support\support-v13\23.0.0\jars\classes.jar"
+        jar="F:\Android\Apps\CarThing\Application\build\intermediates\exploded-aar\com.android.support\support-v4\23.4.0\jars\classes.jar"
         jumboMode="true"
         optimize="true"
         revision="23.0.0"
-        sha1="bb0ac3f3ee2d71854501cc28e52cc84a20209b41">
-        <dex dex="F:\Android\Apps\CarThing\Application\build\intermediates\pre-dexed\debug\com.android.support-support-v13-23.0.0_37157e9672c62133d6d1d6e196ec42e79fb5f673.jar" />
+        sha1="67bd36ee9340ec7c254108936ad16b24bed160cc">
+        <dex dex="F:\Android\Apps\CarThing\Application\build\intermediates\pre-dexed\debug\com.android.support-support-v4-23.4.0_c01efa8f52ae0bc1b4c7b0500a698aca1f2fd170.jar" />
     </item>
     <item
         is-multidex="false"
-        jar="F:\Android\Apps\CarThing\Application\build\intermediates\exploded-aar\com.android.support\support-v13\23.0.0\jars\libs\internal_impl-23.0.0.jar"
+        jar="F:\Android\Apps\CarThing\Application\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\23.4.0\jars\classes.jar"
         jumboMode="true"
         optimize="true"
         revision="23.0.0"
-        sha1="5d4bccb885c8a89d066ecb6c4addb553a99a79a2">
-        <dex dex="F:\Android\Apps\CarThing\Application\build\intermediates\pre-dexed\debug\internal_impl-23.0.0_1c0816bf9936e271a3b4321a4e0f61a37735de0c.jar" />
+        sha1="c2c594cace5d83a3227b2b6e658ecbfd586d3ed9">
+        <dex dex="F:\Android\Apps\CarThing\Application\build\intermediates\pre-dexed\debug\com.android.support-support-vector-drawable-23.4.0_1b95d4241e0b34434252f2b6fad7d5cb0dde58ac.jar" />
     </item>
     <item
         is-multidex="false"
-        jar="F:\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\23.0.0\support-annotations-23.0.0.jar"
+        jar="F:\Android\Apps\CarThing\Application\build\intermediates\exploded-aar\com.android.support\cardview-v7\23.4.0\jars\classes.jar"
         jumboMode="true"
         optimize="true"
         revision="23.0.0"
-        sha1="990e7f98a7bad86a40b1f0bcfeb039023afd0839">
-        <dex dex="F:\Android\Apps\CarThing\Application\build\intermediates\pre-dexed\debug\support-annotations-23.0.0_f7a7f6732f30113caeabef979ddd4831545faa13.jar" />
+        sha1="d9ecde39b460470e655de6e47c05573d2d5a8bfb">
+        <dex dex="F:\Android\Apps\CarThing\Application\build\intermediates\pre-dexed\debug\com.android.support-cardview-v7-23.4.0_fa3b0c0506c957f4bca93ae45c1ba46921d8d7aa.jar" />
     </item>
     <item
         is-multidex="false"
-        jar="F:\Android\Apps\CarThing\Application\build\intermediates\exploded-aar\com.android.support\support-v4\23.0.0\jars\classes.jar"
+        jar="F:\Android\Apps\CarThing\Application\build\intermediates\exploded-aar\com.android.support\support-v4\23.4.0\jars\libs\internal_impl-23.4.0.jar"
         jumboMode="true"
         optimize="true"
         revision="23.0.0"
-        sha1="8413c27b45b7fe61dca4a98159f65e2cee215f5a">
-        <dex dex="F:\Android\Apps\CarThing\Application\build\intermediates\pre-dexed\debug\com.android.support-support-v4-23.0.0_085c860f5cfb64beda66f6ae76db953d8cf16303.jar" />
+        sha1="ea3c07504d2c8f4b13aa17c45c1b68ed9c1c3674">
+        <dex dex="F:\Android\Apps\CarThing\Application\build\intermediates\pre-dexed\debug\internal_impl-23.4.0_ef3895da7d5e8965bdd22e8f8f33ee8965e781b6.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="F:\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\23.4.0\support-annotations-23.4.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.0"
+        sha1="ffbe55fdb2bb456b1485831706a9eac3300bb6b8">
+        <dex dex="F:\Android\Apps\CarThing\Application\build\intermediates\pre-dexed\debug\support-annotations-23.4.0_8028dfe3be197b741d6cb061f70adbc0413dc2bb.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="F:\Android\Apps\CarThing\Application\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\23.4.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.0"
+        sha1="de4db3785756bfb0915a9f59a9b3f2fea7407be4">
+        <dex dex="F:\Android\Apps\CarThing\Application\build\intermediates\pre-dexed\debug\com.android.support-animated-vector-drawable-23.4.0_f1d15bf0142607664dd836b277ea602cca4004c9.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="F:\Android\Apps\CarThing\Application\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.4.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.0"
+        sha1="548f06de403a9409f00554b3ee12a9fdea0e236c">
+        <dex dex="F:\Android\Apps\CarThing\Application\build\intermediates\pre-dexed\debug\com.android.support-appcompat-v7-23.4.0_4d880a336d55c39d96439d77f2756a471f5fb8b4.jar" />
     </item>
     <item
         is-multidex="false"
@@ -52,26 +79,26 @@
         jumboMode="true"
         optimize="true"
         revision="23.0.0"
-        sha1="4945a4543d2be1fe9d44bca39eb8e50bb3e56098">
+        sha1="f53c6cef9a99c4473cde97f746bab66948c3719b">
         <dex dex="F:\Android\Apps\CarThing\Application\build\intermediates\pre-dexed\debug\instant-run-bootstrap_d932c5bad54f77584ad997efd921708ace8fb705.jar" />
     </item>
     <item
         is-multidex="false"
-        jar="F:\Android\Apps\CarThing\Application\build\intermediates\exploded-aar\com.android.support\support-v4\23.0.0\jars\libs\internal_impl-23.0.0.jar"
+        jar="F:\Android\Apps\CarThing\Application\build\intermediates\exploded-aar\com.android.support\support-v13\23.4.0\jars\classes.jar"
         jumboMode="true"
         optimize="true"
         revision="23.0.0"
-        sha1="8bd336eeae661e8311330284897ee07f8ebaa297">
-        <dex dex="F:\Android\Apps\CarThing\Application\build\intermediates\pre-dexed\debug\internal_impl-23.0.0_c52298445633862838ba912f41a88f93000942d0.jar" />
+        sha1="2bf893856577f5038c0b8007a43fda3b3c5beb23">
+        <dex dex="F:\Android\Apps\CarThing\Application\build\intermediates\pre-dexed\debug\com.android.support-support-v13-23.4.0_76fdd4b8feb04b845d06251b2a0737df82693bc2.jar" />
     </item>
     <item
         is-multidex="false"
-        jar="F:\Android\Apps\CarThing\Application\build\intermediates\exploded-aar\com.android.support\cardview-v7\23.0.0\jars\classes.jar"
+        jar="F:\Android\Apps\CarThing\Application\build\intermediates\exploded-aar\com.android.support\support-v13\23.4.0\jars\libs\internal_impl-23.4.0.jar"
         jumboMode="true"
         optimize="true"
         revision="23.0.0"
-        sha1="1ccbc26be2c465c622a48310e8092241b01abe80">
-        <dex dex="F:\Android\Apps\CarThing\Application\build\intermediates\pre-dexed\debug\com.android.support-cardview-v7-23.0.0_a776fa7dc3f659bcbc343df10a5ea70737520c46.jar" />
+        sha1="be09545b7e6ff322c7286d2e80bed3b75b76c529">
+        <dex dex="F:\Android\Apps\CarThing\Application\build\intermediates\pre-dexed\debug\internal_impl-23.4.0_3234083610903ce8a781dc4fee750f91c35f3c34.jar" />
     </item>
 
 </items>

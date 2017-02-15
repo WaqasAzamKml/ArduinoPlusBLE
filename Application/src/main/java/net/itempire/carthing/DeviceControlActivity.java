@@ -37,7 +37,7 @@ public class DeviceControlActivity extends Activity {
     public static final String EXTRAS_DEVICE_ADDRESS = "DEVICE_ADDRESS";
 
     private TextView mConnectionState;
-    private TextView mDataField;
+    private TextView mDataField, txtAbout;
     private Button btnStart, btnEngine, btnStopNBlock, btnDoor, btnAC, btnTemperature, btnGate;
     private String btnACString = "x";
     private String mDeviceName;
@@ -159,6 +159,7 @@ public class DeviceControlActivity extends Activity {
 //    mConnectionState = (TextView) findViewById(R.id.connection_state);
 
         mDataField = (TextView) findViewById(net.itempire.carthing.R.id.data_value);
+        txtAbout = (TextView) findViewById(R.id.tvAbout);
         btnStart = (Button) findViewById(R.id.btnStart);
         btnEngine = (Button) findViewById(R.id.btnEngine);
         btnStopNBlock = (Button) findViewById(R.id.btnStopNBlock);
@@ -183,6 +184,14 @@ public class DeviceControlActivity extends Activity {
 //                return false;
 //            }
 //        });
+
+        txtAbout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(DeviceControlActivity.this, AboutActivity.class);
+                startActivity(i);
+            }
+        });
 
         btnStart.setOnClickListener(new View.OnClickListener() {
             @Override
