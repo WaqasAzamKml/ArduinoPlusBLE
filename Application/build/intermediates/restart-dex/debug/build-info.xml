@@ -5,33 +5,40 @@
     density="xhdpi"
     format="8"
     plugin-version="2.2.3"
-    timestamp="133704851995552"
+    timestamp="299875514193162"
     token="5279366123450252935"
-    verifier="FULL_BUILD_REQUESTED" >
+    verifier="COMPATIBLE" >
 
     <task
         name="javac"
-        duration="478" />
+        duration="0" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="358" />
+        duration="0" />
     <task
         name="verifier"
-        duration="158" />
+        duration="0" />
 
     <artifact
-        location="F:\Android\Apps\CarThing\Application\build\outputs\apk\Application-debug.apk"
-        type="MAIN" />
+        location="F:\Android\Apps\CarThing\Application\build\intermediates\instant-run-resources\resources-debug.ir.ap_"
+        type="RESOURCES" />
 
     <build
-        timestamp="133704851995552"
+        timestamp="299600859416280"
         verifier="FULL_BUILD_REQUESTED" >
         <artifact
             location="F:\Android\Apps\CarThing\Application\build\outputs\apk\Application-debug.apk"
             type="MAIN" />
+    </build>
+    <build
+        timestamp="299875514193162"
+        verifier="COMPATIBLE" >
+        <artifact
+            location="F:\Android\Apps\CarThing\Application\build\intermediates\instant-run-resources\resources-debug.ir.ap_"
+            type="RESOURCES" />
     </build>
 
 </instant-run>
