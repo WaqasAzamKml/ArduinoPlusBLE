@@ -107,7 +107,7 @@ public class DeviceControlActivity extends Activity {
     // demonstrates 'Read' and 'Notify' features.  See
     // http://d.android.com/reference/android/bluetooth/BluetoothGatt.html for the complete
     // list of supported characteristic features.
-    private final ExpandableListView.OnChildClickListener servicesListClickListner =
+    private final ExpandableListView.OnChildClickListener onChildClickListener =
             new ExpandableListView.OnChildClickListener() {
                 @Override
                 public boolean onChildClick(ExpandableListView parent, View v, int groupPosition,
@@ -155,7 +155,7 @@ public class DeviceControlActivity extends Activity {
 
 //        ((TextView) findViewById(R.id.device_address)).setText(mDeviceAddress);
         mGattServicesList = (ExpandableListView) findViewById(net.itempire.carthing.R.id.gatt_services_list);
-        mGattServicesList.setOnChildClickListener(servicesListClickListner);
+        mGattServicesList.setOnChildClickListener(onChildClickListener);
 //    mConnectionState = (TextView) findViewById(R.id.connection_state);
 
         mDataField = (TextView) findViewById(net.itempire.carthing.R.id.data_value);
