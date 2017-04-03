@@ -1,5 +1,6 @@
 package net.itempire.carthing;
 
+import android.Manifest;
 import android.app.Activity;
 import android.app.ListActivity;
 import android.bluetooth.BluetoothAdapter;
@@ -8,6 +9,7 @@ import android.bluetooth.BluetoothManager;
 import android.content.Context;
 import android.content.Intent;
 import android.content.pm.PackageManager;
+import android.os.Build;
 import android.os.Bundle;
 import android.os.Handler;
 import android.view.LayoutInflater;
@@ -43,6 +45,8 @@ public class DeviceScanActivity extends ListActivity {
         getActionBar().setTitle(net.itempire.carthing.R.string.title_devices);
         mHandler = new Handler();
 
+        marshmallowGPSPermissionCheck();
+
         // Use this check to determine whether BLE is supported on the device.  Then you can
         // selectively disable BLE-related features.
         if (!getPackageManager().hasSystemFeature(PackageManager.FEATURE_BLUETOOTH_LE)) {
@@ -61,6 +65,22 @@ public class DeviceScanActivity extends ListActivity {
             Toast.makeText(this, net.itempire.carthing.R.string.error_bluetooth_not_supported, Toast.LENGTH_SHORT).show();
             finish();
             return;
+        }
+    }
+
+    private void marshmallowGPSPermissionCheck() {
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M
+                && this.checkSelfPermission(
+                Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED
+                && this.checkSelfPermission(
+                Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
+            requestPermissions(
+                    new String[]{Manifest.permission.ACCESS_COARSE_LOCATION,
+                            Manifest.permission.ACCESS_FINE_LOCATION, Manifest.permission.BLUETOOTH, Manifest.permission.BLUETOOTH_ADMIN},
+                    1337);
+        } else {
+            Toast.makeText(this, "This application need location permission.", Toast.LENGTH_SHORT).show();
+            //finish();
         }
     }
 
@@ -83,6 +103,10 @@ public class DeviceScanActivity extends ListActivity {
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
+            case R.id.menu_about:
+                Intent i = new Intent(DeviceScanActivity.this, AboutActivity.class);
+                startActivity(i);
+                break;
             case net.itempire.carthing.R.id.menu_scan:
                 mLeDeviceListAdapter.clear();
                 scanLeDevice(true);
